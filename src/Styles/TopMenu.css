@@ -1,0 +1,30 @@
+.topMenu{
+    background-color: silver;
+    border-radius: 0 0 10rem 10rem;
+    padding:2rem;
+    margin: 0 10rem;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.topMenu button{
+    background-color: transparent;
+    border: none;
+    text-shadow: 5px 5px 5px black;
+    font-size: 1.5rem;
+    color: white;
+    transition: .75s ease all;
+}
+
+.topMenu button:hover{
+    text-shadow: 10px 10px 10px black;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .topMenu.mobile{
+        display:none
+    }
+}

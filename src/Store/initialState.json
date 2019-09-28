@@ -1,0 +1,58 @@
+{
+    "activities":[
+        {
+            "id": "test01",
+            "what": "rate",
+            "hidden": false,
+            "comments": []
+        },
+        {
+            "id": "test02",
+            "what": "add",
+            "hidden": false,
+            "comments": ["Hello There","Ohhh my...."]
+        },
+        {
+            "id": "test03",
+            "what": "rate",
+            "hidden": true,
+            "comments": ["This is a comment"]
+        }
+    ],
+    "movies":[
+        {
+            "id": "test01",
+            "title": "Friday the test",
+            "genres": "test,horror",
+            "date": "2019-09-27",
+            "rating": 3,
+            "desc": "This is the description"
+        },
+        {
+            "id": "test02",
+            "title": "Friday the test2",
+            "genres": "test,horror",
+            "date": "2019-09-28",
+            "rating": 1,
+            "desc": "This is the description too,but this time...it's longer"
+        },
+        {
+            "id": "test03",
+            "title": "Friday the test3:The rebirth of the Test",
+            "genres": "test,horror",
+            "date": "2019-09-29",
+            "rating": 5,
+            "desc": "This is the description too,but this time...it's longer....and it's getting bigger"
+        }
+    ],
+    "favorites":[
+        {
+            "id":"test01",
+            "title":"Friday the test"
+        },
+        {
+            "id":"test02",
+            "title":"Friday the test2"
+        }
+    ]
+}

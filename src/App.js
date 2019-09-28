@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { TopMenu } from './UI/TopMenu';
+import {HashRouter,Route} from 'react-router-dom'
+import { ActivityFlow, MovieList, FavoriteList } from './Containers'
+import {PropTypes} from 'prop-types'
+import { Home } from './UI/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+const App = () =>{
+ return(<HashRouter>
+      <TopMenu/>
+      {/*<Route exact path="/" component={App}/>*/}
+      <Route exact path="/" component={Home}/>
+      <Route path="/movies" component={MovieList}/>
+      <Route path="/favorites" component={FavoriteList}/>
+      <Route path="/activities" component={ActivityFlow}/> 
+    </HashRouter>
+ )}
+
+App.contextTypes = {
+  store: PropTypes.object
+ }
+
+ export default App
