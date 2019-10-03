@@ -77,14 +77,14 @@ export const favorite = (state={},action) => {
             }
                 
         default: return state
-
     }
 }
 
 export const favorites = (state=[],action) => {
     switch(action.type){
         case c.ADD_FAVORITE:
-            return [...state,favorite({},action)]
+            return (state.find(e => e.id === action.id))? state : [...state,favorite({},action)]
+
         
             case c.REMOVE_FAVORITE:
             return state.filter(e => e.id !== action.id)

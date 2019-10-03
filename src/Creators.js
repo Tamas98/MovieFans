@@ -24,6 +24,7 @@ export const commentActivity = (id,comment) =>
 export const addMovie = (title,genres,date,desc) => 
 ({
     type: c.ADD_MOVIE,
+    id:v4(),
     title,
     genres,
     date,

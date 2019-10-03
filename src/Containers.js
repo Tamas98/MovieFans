@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { hideActivity, addFavorite } from './Creators'
+import { hideActivity, addFavorite, addMovie, removeFavorite } from './Creators'
 import { Activites } from './UI/Activities'
 import { Movies } from './UI/Movies'
 import { Favorites } from './UI/Favorites'
@@ -22,6 +22,9 @@ export const MovieList = connect(
     dispatch=>({
         onAddToFavorites(id,title){
                 dispatch(addFavorite(id,title))
+        },
+        onAddNewMovie(title,genres,date,desc){
+            dispatch(addMovie(title,genres,date,desc))
         }
     })
 
@@ -30,5 +33,11 @@ export const MovieList = connect(
 export const FavoriteList = connect(
     state=>({
         favorites: state.favorites
+    }),
+    dispatch=>({
+        onRemoveFavorite(id){
+            dispatch(removeFavorite(id))
+        }
     })
+
 )(Favorites)
