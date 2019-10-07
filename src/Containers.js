@@ -1,8 +1,8 @@
 import { connect } from 'react-redux'
 import { hideActivity, addFavorite, addMovie, removeFavorite } from './Creators'
-import { Activites } from './UI/Activities'
-import { Movies } from './UI/Movies'
-import { Favorites } from './UI/Favorites'
+import { Activites } from './UI/Activities/Activities'
+import { Movies } from './UI/Movies/Movies'
+import { Favorites } from './UI/Favorites/Favorites'
 
 export const ActivityFlow = connect(
     state =>({

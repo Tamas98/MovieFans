@@ -1,0 +1,11 @@
+#welcomeText{
+    border:2px thick black;
+    display:flex;
+    justify-content: center;
+    color: red;
+    font-size: 3rem;
+    text-shadow: .2rem .2rem .2rem black;
+    margin: 0rem 15rem 2rem 18rem;
+    width:65%;
+    letter-spacing: 5rem;
+}

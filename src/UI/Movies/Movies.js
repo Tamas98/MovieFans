@@ -1,7 +1,7 @@
 import React from 'react'
 import Movie from './Movie'
 import {NewMovieForm} from './NewMovieForm'
-import '../Styles/Movies.css'
+import '../../Styles/Movies.css'
 
 export const Movies = ({movies=[],onAddToFavorites=f => f,onAddNewMovie=f => f}) =>{
     return(

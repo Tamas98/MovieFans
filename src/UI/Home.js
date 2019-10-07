@@ -1,9 +1,10 @@
 import React from 'react'
 import { ActivityFlow } from '../Containers'
+import '../Styles/MainStyle.css'
 
 export const Home = () =>
 <div>
-    <div style={{padding:'10rem',backgroundColor:'whitesmoke',border:"2px thick black"}}>
+    <div id="welcomeText">
         <h1>Welcome</h1>
     </div>
     <ActivityFlow/>
